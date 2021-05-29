@@ -9,11 +9,6 @@ class CategoriesController < ApplicationController
     render json: { status: 'SUCCESS', message: 'Loaded the category', data: @category }
   end
 
-  def new
-    category = Category.new
-    render json: { status: 'SUCCESS', message: 'Loaded new category', data: category }
-  end
-
   def create
     category = Category.create(category_params)
     if category.save
