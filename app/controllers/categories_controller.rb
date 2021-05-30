@@ -1,5 +1,6 @@
 class CategoriesController < ApplicationController
   before_action :set_category, only:[:show, :update, :destroy]
+
   def index
     categories = Category.limit(18).order("created_at DESC")
     render json: { status: 'SUCCESS', message: 'Loaded categories', data: categories }
