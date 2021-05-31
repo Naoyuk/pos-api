@@ -17,3 +17,11 @@ Kinjo cafe POS API is a system including order receiving, ordering, registering 
 - `POST /api/v1/products` creates a product and returns the product
 - `PUT /api/v1/products/:id` updates a product and returns the product
 - `DELETE /api/v1/products/:id` deletes a product and returns the product
+
+### Order
+- `GET /api/v1/orders` returns all orders
+- `GET /api/v1/orders/:id` returns the order you specify
+- `POST /api/v1/orders` creates a order and returns the order
+- `PUT /api/v1/orders/:id` updates a order and returns the order
+- `DELETE /api/v1/orders/:id` deletes a order and returns the order
+
