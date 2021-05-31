@@ -3,6 +3,7 @@ FactoryBot.define do
     name { "test" }
     sequence(:price) { |n| n * 5 }
     category_id { 1 }
+    association :category
   end
 end
 

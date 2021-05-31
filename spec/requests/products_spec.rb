@@ -2,7 +2,6 @@ require 'rails_helper'
 
 RSpec.describe "Products", type: :request do
   describe "GET /api/v1/products" do
-    category = FactoryBot.create(:category)
     FactoryBot.create_list(:product, 20)
 
     it "returns http success" do
